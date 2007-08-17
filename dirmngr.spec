@@ -69,8 +69,8 @@ rm -rf %{buildroot}
 %{_bindir}/*
 %{_infodir}/*.info*
 %{_libexecdir}/dirmngr_ldap
-%{_mandir}/man1/dirmngr-client.1.bz2
-%{_mandir}/man1/dirmngr.1.bz2
+%{_mandir}/man1/dirmngr-client.*
+%{_mandir}/man1/dirmngr.*
 %{_var}/run/dirmngr
 %{_var}/cache/dirmngr
 %{_var}/lib/dirmngr
