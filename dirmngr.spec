@@ -1,12 +1,12 @@
 %define version 1.0.0
-%define rel 3
+%define rel 4
 %define release %mkrel %rel
 
 Name:		dirmngr
 Version:	%{version}
 Release:	%{release}
 Summary:	Client for Managing/Downloading CRLs
-License:	GPL
+License:	GPLv2+
 Group:		System/Libraries
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 URL:		http://www.gnupg.org/
@@ -20,7 +20,6 @@ BuildRequires:	libassuan-devel >= 0.9.3
 BuildRequires:	libpth-devel
 # won't work with ldap1
 Buildrequires:	openldap2-devel
-# patch0
 BuildRequires:	texinfo
 BuildRequires:	tetex-latex
 
@@ -74,6 +73,4 @@ rm -rf %{buildroot}
 %{_var}/run/dirmngr
 %{_var}/cache/dirmngr
 %{_var}/lib/dirmngr
-
-
 
