@@ -8,7 +8,6 @@ Release:	%{release}
 Summary:	Client for Managing/Downloading CRLs
 License:	GPLv2+
 Group:		System/Libraries
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 URL:		http://www.gnupg.org/
 
 Source0:	ftp://ftp.gnupg.org/gcrypt/%{name}/%{name}-%{version}.tar.bz2
