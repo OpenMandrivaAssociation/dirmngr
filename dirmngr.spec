@@ -1,5 +1,5 @@
 %define version 1.0.0
-%define rel 4
+%define rel 5
 %define release %mkrel %rel
 
 Name:		dirmngr
@@ -19,7 +19,7 @@ BuildRequires:	libksba-devel >= 0.9.11
 BuildRequires:	libassuan-devel >= 0.9.3
 BuildRequires:	libpth-devel
 # won't work with ldap1
-Buildrequires:	openldap2-devel
+Buildrequires:	openldap-devel
 BuildRequires:	texinfo
 BuildRequires:	tetex-latex
 
