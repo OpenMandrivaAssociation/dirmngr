@@ -1,18 +1,13 @@
-%define version 1.0.0
-%define rel 5
-%define release %mkrel %rel
-
 Name:		dirmngr
-Version:	%{version}
-Release:	%{release}
+Version:	1.0.1
+Release:	%mkrel 1
 Summary:	Client for Managing/Downloading CRLs
 License:	GPLv2+
 Group:		System/Libraries
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 URL:		http://www.gnupg.org/
-
 Source0:	ftp://ftp.gnupg.org/gcrypt/%{name}/%{name}-%{version}.tar.bz2
-Source1:	ftp://ftp.gnupg.org/gcrypt/%{name}/%{name}-%{version}.tar.bz2.sig
+Source1:	%{SOURCE0}.sig
 BuildRequires:	libgcrypt-devel >= 1.1.94
 BuildRequires:	libgpg-error-devel >= 0.7
 BuildRequires:	libksba-devel >= 0.9.11
@@ -35,9 +30,11 @@ directly.
 %build
 %configure2_5x --localstatedir=%{_var}
 %make
-make check
 
 make -C doc pdf
+
+%check
+make check
 
 %install
 rm -rf %{buildroot}
@@ -73,4 +70,3 @@ rm -rf %{buildroot}
 %{_var}/run/dirmngr
 %{_var}/cache/dirmngr
 %{_var}/lib/dirmngr
-
