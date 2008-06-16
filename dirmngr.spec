@@ -1,6 +1,6 @@
 Name:		dirmngr
 Version:	1.0.1
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Client for Managing/Downloading CRLs
 License:	GPLv2+
 Group:		System/Libraries
