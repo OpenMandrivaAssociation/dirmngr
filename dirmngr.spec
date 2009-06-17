@@ -1,7 +1,11 @@
+%define name    dirmngr
+%define version 1.0.3
+%define release %mkrel 1
+
 Summary:	Client for Managing/Downloading CRLs
-Name:		dirmngr
-Version:	1.0.2
-Release:	%mkrel 1
+Name:		%{name}
+Version:	%{version}
+Release:	%{release}
 License:	GPLv2+
 Group:		System/Libraries
 URL:		http://www.gnupg.org/
