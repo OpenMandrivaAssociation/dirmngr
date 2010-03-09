@@ -1,6 +1,6 @@
 %define name    dirmngr
-%define version 1.0.3
-%define release %mkrel 1
+%define version 1.1.0
+%define release %mkrel 0.rc1.1
 
 Summary:	Client for Managing/Downloading CRLs
 Name:		%{name}
@@ -9,7 +9,7 @@ Release:	%{release}
 License:	GPLv2+
 Group:		System/Libraries
 URL:		http://www.gnupg.org/
-Source0:	ftp://ftp.gnupg.org/gcrypt/%{name}/%{name}-%{version}.tar.bz2
+Source0:	ftp://ftp.gnupg.org/gcrypt/%{name}/%{name}-%{version}rc1.tar.bz2
 Source1:	%{SOURCE0}.sig
 BuildRequires:	libgcrypt-devel >= 1.1.94
 BuildRequires:	libgpg-error-devel >= 0.7
@@ -29,7 +29,7 @@ themselves. Dirmngr is usually invoked by gpgsm and in general not used
 directly.
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{version}rc1
 
 %build
 %configure2_5x --localstatedir=%{_var}
