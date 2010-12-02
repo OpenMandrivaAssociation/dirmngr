@@ -1,6 +1,6 @@
 %define name    dirmngr
 %define version 1.1.0
-%define release %mkrel 0.rc1.1
+%define release %mkrel 0.rc1.2
 
 Summary:	Client for Managing/Downloading CRLs
 Name:		%{name}
