@@ -7,9 +7,6 @@ Group:		System/Libraries
 Url:		http://www.gnupg.org/
 Source0:	ftp://ftp.gnupg.org/gcrypt/%{name}/%{name}-%{version}.tar.bz2
 Source1:	%{SOURCE0}.sig
-
-BuildRequires:	texinfo
-BuildRequires:	tetex-latex
 BuildRequires:	libassuan-devel >= 0.9.3
 BuildRequires:	libksba-devel >= 0.9.11
 BuildRequires:	openldap-devel
@@ -31,7 +28,6 @@ export LDFLAGS="-llber"
 %configure2_5x --localstatedir=%{_var}
 %make
 
-make -C doc pdf
 
 %check
 make check
@@ -48,7 +44,7 @@ mkdir -p %{buildroot}%{_var}/lib/dirmngr/extra-certs
 %find_lang %{name}
 
 %files -f %{name}.lang
-%doc README* ChangeLog NEWS doc/dirmngr.pdf
+%doc README* ChangeLog NEWS
 %dir %{_sysconfdir}/dirmngr
 %dir %{_sysconfdir}/dirmngr/trusted-certs
 %{_bindir}/*
