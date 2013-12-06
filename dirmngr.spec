@@ -1,7 +1,7 @@
 Summary:	Client for Managing/Downloading CRLs
 Name:		dirmngr
 Version:	1.1.0
-Release:	10
+Release:	11
 License:	GPLv2+
 Group:		System/Libraries
 Url:		http://www.gnupg.org/
