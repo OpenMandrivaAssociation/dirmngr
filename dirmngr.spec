@@ -22,6 +22,7 @@ directly.
 
 %prep
 %setup -q
+autoreconf -fiv
 
 %build
 export LDFLAGS="-llber"
