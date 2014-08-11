@@ -10,6 +10,7 @@ Source1:	%{SOURCE0}.sig
 BuildRequires:	libassuan-devel >= 0.9.3
 BuildRequires:	libksba-devel >= 0.9.11
 BuildRequires:	openldap-devel
+BuildRequires:	gettext-devel
 BuildRequires:	pth-devel
 BuildRequires:	pkgconfig(gpg-error)
 BuildRequires:	pkgconfig(libgcrypt)
