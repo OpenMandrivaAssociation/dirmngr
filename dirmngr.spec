@@ -1,12 +1,12 @@
 Summary:	Client for Managing/Downloading CRLs
 Name:		dirmngr
-Version:	1.1.0
-Release:	15
+Version:	1.1.1
+Release:	1
 License:	GPLv2+
 Group:		System/Libraries
 Url:		http://www.gnupg.org/
 Source0:	ftp://ftp.gnupg.org/gcrypt/%{name}/%{name}-%{version}.tar.bz2
-Source1:	%{SOURCE0}.sig
+Source1:	ftp://ftp.gnupg.org/gcrypt/%{name}/%{name}-%{version}.tar.bz2.sig
 BuildRequires:	libassuan-devel >= 0.9.3
 BuildRequires:	libksba-devel >= 0.9.11
 BuildRequires:	openldap-devel
