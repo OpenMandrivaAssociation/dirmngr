@@ -1,0 +1,4 @@
+This package is OBSOLETE.
+
+As of gnupg 2.1.0, dirmngr has been merged into
+gnupg. It is now packaged there.
